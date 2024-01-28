@@ -58,25 +58,3 @@ stomatas = customtkinter.CTkLabel(app, text="Number", font=("Single Day", 20))
 stomatas.configure(text= "Plant:")
 stomatas.place(x=30, y=205)
 app.mainloop()
-
-customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
-customtkinter.set_default_color_theme("green")  # Themes: blue (default), dark-blue, green
-
-app = customtkinter.CTk()  # create CTk window like you do with the Tk window
-app.geometry("500x300")
-app.title("AI Stomata Counter")
-app.iconbitmap('image (1).ico')
-app.resizable(False, False)
-
-random = customtkinter.CTkButton(master=app, text="Random Leaf", width=230, height=50, font=("Single Day", 20), command=random_leaf)
-random.place(relx=0.5, y=185, anchor=customtkinter.CENTER)
-randomlabel = customtkinter.CTkLabel(app, text="🛈 Use this if you don't know which leaf you have.", font=("Single Day", 20))
-randomlabel.place(relx=0.5, y=225, anchor=customtkinter.CENTER)
-
-
-specific = customtkinter.CTkButton(master=app, text="Specific Leaf", width=230, height=50, font=("Single Day", 20), command=specific_leaf)
-specific.place(relx=0.5, y=100, anchor=customtkinter.CENTER)
-specificlabel = customtkinter.CTkLabel(app, text="🛈 Use this if you know which leaf you have.", font=("Single Day", 20))
-specificlabel.place(relx=0.5, y=140, anchor=customtkinter.CENTER)
-
-app.mainloop()
